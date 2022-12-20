@@ -50,7 +50,9 @@ export default defineComponent({
   <div class="navbar">
     <h1 class="unbounded-google-font title">Fish Watch</h1>
     <div class="search-field">
-      <input class="h-full search-input" type="search" id="fish-search" name="search" v-model="searchInput">
+      <input class="h-full search-input" type="search" id="fish-search" name="search" v-model="searchInput"
+             placeholder="search by species name..."
+      >
       <button class="h-full search-btn" type="button">Search</button>
     </div>
   </div>
