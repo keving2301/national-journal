@@ -14,7 +14,6 @@ export const useSpeciesStore = defineStore('species', {
                 let response = await fetch("https://www.fishwatch.gov/api/species");
                 let data = await response.json();
                 this.species = orderSpeciesAlphabetically(data)
-                console.log(this.species)
             } catch (error) {
                 console.log(error);
             }
